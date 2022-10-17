@@ -19,3 +19,18 @@
   --color-border: #818cf8;
   --color-shadow: theme("colors.gray.500");
 }
+
+.theme-blackpink {
+  --color-bg: theme("colors.black");
+  --color-text-base: theme("colors.pink.600");
+  --color-text-muted: theme("colors.pink.400");
+  --color-border: theme("colors.sky.200");
+  --color-shadow: theme("colors.rose.400");
+}
+
+.theme-seabreeze {
+  --color-bg: theme("colors.teal.100");
+  --color-text-base: theme("colors.teal.800");
+  --color-text-muted: theme("colors.teal.400");
+  --color-border: theme("colors.teal.600");
+}

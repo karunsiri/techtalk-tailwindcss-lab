@@ -1,8 +1,10 @@
 import React, { useContext, useEffect } from "react"
 import { GlobalContext } from "../components/GlobalContextProvider"
+import ThemeSelector from "../components/ThemeSelector"
 
 const DarkModePage = () => {
   const { mode, setMode } = useContext(GlobalContext)
+  const { theme } = useContext(GlobalContext)
 
   useEffect(() => {
     if (mode === 'dark') {
@@ -20,6 +22,7 @@ const DarkModePage = () => {
           container mx-auto rounded w-1/2 p-8
           bg-base shadow-lg shadow-base text-base
           ${mode === 'dark' && 'theme-dark'}
+          theme-${theme}
         `}
       >
         <h1 className="text-3xl font-semibold mb-4">
@@ -39,6 +42,8 @@ const DarkModePage = () => {
         >
           Toggle Dark Mode
         </button>
+
+        <ThemeSelector />
       </div>
     </div>
   )
