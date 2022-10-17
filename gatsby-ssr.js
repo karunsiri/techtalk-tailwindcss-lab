@@ -13,7 +13,7 @@ const applyDarkModeClass = `
 `
 
 const BodyAttributes = {
-  className: "bg-slate-100",
+  className: "bg-slate-100 dark:bg-neutral-800",
 }
 
 export const onRenderBody = ({ setPreBodyComponents, setBodyAttributes }) => {
