@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #fff;
+    --color-text-base: #334155; /* 51 65 85 */
+    --color-text-muted: #94a3b8; /* 148 163 184 */
+    --color-border: #fb7185;
+    --color-shadow: theme("colors.gray.200");
+  }
+}
+
+.theme-dark {
+  --color-bg: #1e293b;
+  --color-text-base: #e2e8f0; /* 236 232 240 */
+  --color-text-muted: #64748b; /* 100 116 139 */
+  --color-border: #818cf8;
+  --color-shadow: theme("colors.gray.500");
+}
