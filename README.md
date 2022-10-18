@@ -40,7 +40,8 @@ The `HEAD` commit will include everything from every step.
 - ## step-4
 
   Darkmode as a theme. Along with some sample themes that works the same way.
-  By overriding values within `global.css` and add variable names to
+  We are removing the hardcoded values, e.g. `text-slate-800`, `bg-white`, etc. out of our templates
+  by moving values to variables in `global.css` and add those variables to
   `tailwind.config.js`, you can define your own extensions as you desired.
 
   Go to `http://localhost:8000/theme-switcher`, and play around.
