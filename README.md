@@ -1,54 +1,46 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal starter
+  TailwindCSS Demo lab
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1. Install stuff
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+  ```shell
+  yarn install
+  ```
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+2. Run local server
 
-2.  **Start developing.**
+  ```shell
+  yarn develop
+  ```
 
-    Navigate into your new site’s directory and start it up.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Steps as shown in demo
 
-3.  **Open the code and start customizing!**
+You can go to specific step by `git checkout <step-tag>`, e.g. `git checkout
+step-1`.
+The `HEAD` commit will include everything from every step.
 
-    Your site is now running at http://localhost:8000!
+- ## step-1
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+  Overview of tailwind config files
 
-4.  **Learn more**
+- ## step-2
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+  Using darkmode following the operating system preference.
+  Go to `http://localhost:8000/darkmode`.
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- ## step-3
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+  Darkmode improved. Allow you to manually toggle darkmode.
+  Go to `http://localhost:8000/darkmode`, and click on the toggle button.
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+- ## step-4
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+  Darkmode as a theme. Along with some sample themes that works the same way.
+  By overriding values within `global.css` and add variable names to
+  `tailwind.config.js`, you can define your own extensions as you desired.
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+  Go to `http://localhost:8000/theme-switcher`, and play around.
